@@ -1,6 +1,6 @@
 
 
-# Poproaster test
+# PopRoast test
 Arduino sketch，Test `PopRoast` app on Android/iOS.  
 **PopRoast**：Receiving data on coffee roasting through Bluetooth, drawing chart in real time, and monitoring roasting conditions.  
 Can also simply input the temperature to generate a chart.  
@@ -12,18 +12,24 @@ The transmitted data can be viewed on the Arduino's serial monitor. Receives the
 This program is for testing purposes only.
 ![poproast-demo data test](images/preview02.jpg)
 
+## Arduino Bluetooth module
+* Android: Bluetooth module that supports Arduino is generally OK, I tried HC-02 (Bluetooth 2.0 + 4.0BLE version) and HC-05, it works  
+* iOS: I use [HC-02](http://www.hc01.com/productdetail?productid=20180314021)(Bluetooth 2.0+4.0BLE version)  
+For details, please refer to:    
+https://github.com/don/BluetoothSerial#where-does-this-work
+
 # poproast-demo
 Measure temperature using the MAX31855 module and send it to the `PopRoast` App on the phone via the Bluetooth module. 
 
 # Install
 Just clone and install to your Arduino uno with bluetooth module.
-[poproaster-test](https://github.com/usb2win/poproaster-test)
+[poproast-test](https://github.com/usb2win/poproaster-test)
 :tada:
 
  * 如果喜欢它，请别忘了给我一颗鼓励的星
  * Support me a `Star` if it is necessary.  :+1:
  
-# poproast-demo使用要求
+# poproast-demo
 If you want to use PopRoast to view the roasting chart, you may need to:
 1. Arduino Uno
 2. Bluetooth module: hc-05/06 for Android,hc-02 for Android/iOS
@@ -59,7 +65,3 @@ Arduino only
 
 # License
 MIT
-
-# :snowflake: :beers:
-
-* Please let me know if you have any questions.

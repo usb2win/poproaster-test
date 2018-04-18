@@ -1,6 +1,6 @@
 
 
-# Poproaster test
+# PopRoast test
 Arduino程序，用来测试Android/iOS的应用：`PopRoast`  
 **PopRoast**：通过蓝牙接收咖啡烘培时的数据，实时绘制烘培曲线，便于监控烘培情况。  
 也可简单录入温度来生成烘培曲线。  
@@ -11,13 +11,19 @@ Arduino程序，用来测试Android/iOS的应用：`PopRoast`
 这个程序仅用于测试。
 ![poproast-demo data test](images/preview02.jpg)
 
+## Arduino蓝牙模块
+* Android: 支持Arduino的蓝牙模块一般都可以, 我试过HC-02(Bluetooth 2.0+4.0BLE版本)和HC-05, 没问题  
+* iOS: 我用[HC-02](http://www.hc01.com/productdetail?productid=20180314021)(Bluetooth 2.0+4.0BLE版本)  
+详细请参考：  
+https://github.com/don/BluetoothSerial#where-does-this-work
+
 # poproast-demo
 使用MAX31855模块测量温度，并通过蓝牙模块发送到手机上的`PopRoast`应用  
 
 
 # Install
 Just clone and install to your Arduino uno with bluetooth and MAX31855 modules.
-[poproaster-test](https://github.com/usb2win/poproaster-test)
+[poproast-test](https://github.com/usb2win/poproaster-test)
 :tada:
 
  * 如果喜欢它，请别忘了给我一颗鼓励的星
@@ -60,7 +66,3 @@ Arduino only
 
 # License
 MIT
-
-# :snowflake: :beers:
-
-* Please let me know if you have any questions.
